@@ -1,5 +1,6 @@
 package com.lusir.JVM;
 
+import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
 
 /**
@@ -8,7 +9,7 @@ import java.lang.ref.SoftReference;
  **/
 public class _SoftReference {
     public static void main(String[] args) {
-        SoftReference<M> m=new SoftReference<>(new M());
+        SoftReference<M> m=new SoftReference<>(new M(), new ReferenceQueue<M>());
 
         System.out.println(m.get());
         System.gc();

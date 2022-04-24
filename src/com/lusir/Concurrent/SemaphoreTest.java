@@ -28,7 +28,6 @@ public class SemaphoreTest {
 //            CyclicBarrier cyclicBarrier=new CyclicBarrier(2);
 //            cyclicBarrier.reset();
         }
-        HashMap map=new HashMap();
-        map.put()
+
     }
 }
